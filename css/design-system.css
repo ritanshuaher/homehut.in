@@ -1,14 +1,10 @@
 /* ============================================
-   HOMEHUT DESIGN SYSTEM — "The Culinary Atelier"
+   HOMEHUT DESIGN SYSTEM
    Smart. Modern. Efficient.
    ============================================ */
 
-/* ---- Google Fonts Import ---- */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-/* ============================================
-   1. CSS CUSTOM PROPERTIES (Design Tokens)
-   ============================================ */
 :root {
   --hue-primary: 140;
   --sat-primary: 30%;
@@ -100,17 +96,17 @@
   --radius-xl: 20px;
   --radius-2xl: 24px;
   --radius-full: 9999px;
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.10);
-  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.12);
-  --shadow-ambient: 0 24px 48px rgba(27, 28, 24, 0.04);
-  --shadow-glow-primary: 0 8px 25px rgba(var(--primary-rgb), 0.25);
-  --shadow-glow-primary-lg: 0 12px 40px rgba(var(--primary-rgb), 0.35);
-  --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
-  --ease-in-out: cubic-bezier(0.4, 0, 0.6, 1);
-  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.10);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.12);
+  --shadow-ambient: 0 24px 48px rgba(27,28,24,0.04);
+  --shadow-glow-primary: 0 8px 25px rgba(var(--primary-rgb),0.25);
+  --shadow-glow-primary-lg: 0 12px 40px rgba(var(--primary-rgb),0.35);
+  --ease-out: cubic-bezier(0.4,0,0.2,1);
+  --ease-in-out: cubic-bezier(0.4,0,0.6,1);
+  --ease-bounce: cubic-bezier(0.34,1.56,0.64,1);
   --duration-fast: 150ms;
   --duration-normal: 300ms;
   --duration-slow: 500ms;
@@ -131,49 +127,50 @@
   --z-tooltip: 1200;
 }
 
-/* ============================================
-   2. DARK MODE
-   ============================================ */
 [data-theme="dark"] {
-  --surface: hsl(140, 12%, 8%);
-  --surface-dim: hsl(140, 8%, 6%);
-  --surface-bright: hsl(140, 10%, 12%);
-  --surface-container-lowest: hsl(140, 10%, 5%);
-  --surface-container-low: hsl(140, 8%, 10%);
-  --surface-container: hsl(140, 8%, 13%);
-  --surface-container-high: hsl(140, 7%, 16%);
-  --surface-container-highest: hsl(140, 6%, 19%);
-  --surface-variant: hsl(140, 6%, 19%);
-  --bg-cream: hsl(140, 12%, 8%);
-  --on-surface: hsl(40, 10%, 92%);
-  --on-surface-variant: hsl(100, 5%, 75%);
-  --on-primary: hsl(0, 0%, 100%);
-  --primary: hsl(140, 30%, 65%);
-  --primary-dark: hsl(140, 35%, 55%);
-  --primary-container: hsl(140, 25%, 20%);
-  --primary-light: hsl(140, 20%, 72%);
-  --outline: hsl(130, 5%, 55%);
-  --outline-variant: hsl(100, 4%, 35%);
-  --inverse-surface: hsl(40, 20%, 90%);
-  --inverse-on-surface: hsl(80, 6%, 18%);
-  --footer-bg: hsl(150, 20%, 8%);
-  --footer-text: hsl(60, 20%, 90%);
-  --footer-link: hsl(135, 30%, 65%);
-  --footer-border: hsl(150, 15%, 18%);
-  --hero-bar-bg: hsl(150, 20%, 12%);
-  --hero-bar-text: hsl(60, 20%, 90%);
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
-  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.5);
+  --surface: hsl(140,12%,8%);
+  --surface-dim: hsl(140,8%,6%);
+  --surface-bright: hsl(140,10%,12%);
+  --surface-container-lowest: hsl(140,10%,5%);
+  --surface-container-low: hsl(140,8%,10%);
+  --surface-container: hsl(140,8%,13%);
+  --surface-container-high: hsl(140,7%,16%);
+  --surface-container-highest: hsl(140,6%,19%);
+  --surface-variant: hsl(140,6%,19%);
+  --bg-cream: hsl(140,12%,8%);
+  --on-surface: hsl(40,10%,92%);
+  --on-surface-variant: hsl(100,5%,75%);
+  --on-primary: hsl(0,0%,100%);
+  --primary: hsl(140,30%,65%);
+  --primary-dark: hsl(140,35%,55%);
+  --primary-container: hsl(140,25%,20%);
+  --primary-light: hsl(140,20%,72%);
+  --outline: hsl(130,5%,55%);
+  --outline-variant: hsl(100,4%,35%);
+  --inverse-surface: hsl(40,20%,90%);
+  --inverse-on-surface: hsl(80,6%,18%);
+  --footer-bg: hsl(150,20%,8%);
+  --footer-text: hsl(60,20%,90%);
+  --footer-link: hsl(135,30%,65%);
+  --footer-border: hsl(150,15%,18%);
+  --hero-bar-bg: hsl(150,20%,12%);
+  --hero-bar-text: hsl(60,20%,90%);
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.2);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.35);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.4);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.5);
 }
 
-/* ============================================
-   3. CSS RESET & BASE STYLES
-   ============================================ */
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { font-size: 16px; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+*,*::before,*::after { margin:0; padding:0; box-sizing:border-box; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   font-family: var(--font-body);
   font-size: var(--text-body-md);
@@ -186,8 +183,19 @@ body {
   overflow-x: hidden;
   animation: pageFadeIn 0.25s ease-out both;
 }
-@keyframes pageFadeIn { from { opacity: 0; } to { opacity: 1; } }
-.reveal, .reveal-left, .reveal-right, .category-card-new, .product-card, .trust-card, .testimonial-card, .hero__3d-container, .css-bag { will-change: transform, opacity; }
+
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.reveal, .reveal-left, .reveal-right,
+.category-card-new, .product-card,
+.trust-card, .testimonial-card,
+.hero__3d-container, .css-bag {
+  will-change: transform, opacity;
+}
+
 img, video, svg { max-width: 100%; height: auto; display: block; }
 a { color: var(--primary); text-decoration: none; transition: color var(--duration-normal) var(--ease-out); }
 a:hover { color: var(--primary-dark); }
@@ -195,12 +203,10 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 input, textarea, select { font-family: var(--font-body); font-size: var(--text-body-md); }
 ul, ol { list-style: none; }
 :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: var(--radius-xs); }
+
 .skip-link { position: absolute; top: -100%; left: var(--space-4); padding: var(--space-3) var(--space-5); background: var(--primary); color: var(--on-primary); border-radius: var(--radius-sm); z-index: var(--z-tooltip); font-weight: var(--weight-semibold); transition: top var(--duration-normal) var(--ease-out); }
 .skip-link:focus { top: var(--space-4); color: var(--on-primary); }
 
-/* ============================================
-   4. TYPOGRAPHY CLASSES
-   ============================================ */
 .display-lg { font-family: var(--font-display); font-size: var(--text-display-lg); line-height: 1.08; letter-spacing: -0.02em; font-weight: var(--weight-normal); }
 .display-md { font-family: var(--font-display); font-size: var(--text-display-md); line-height: 1.1; letter-spacing: -0.015em; font-weight: var(--weight-normal); }
 .display-sm { font-family: var(--font-display); font-size: var(--text-display-sm); line-height: 1.15; letter-spacing: -0.01em; font-weight: var(--weight-normal); }
@@ -216,9 +222,6 @@ ul, ol { list-style: none; }
 .label-md { font-size: var(--text-label-md); font-weight: var(--weight-medium); letter-spacing: 0.04em; text-transform: uppercase; }
 .label-sm { font-size: var(--text-label-sm); font-weight: var(--weight-medium); letter-spacing: 0.05em; text-transform: uppercase; }
 
-/* ============================================
-   5. LAYOUT UTILITIES
-   ============================================ */
 .container { width: 100%; max-width: var(--container-xl); margin: 0 auto; padding: 0 var(--space-5); }
 .container-wide { max-width: var(--container-2xl); margin: 0 auto; padding: 0 var(--space-5); }
 .section { padding: var(--space-11) 0; }
@@ -230,46 +233,36 @@ ul, ol { list-style: none; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 
-/* ============================================
-   6. GLASSMORPHISM & VISUAL EFFECTS
-   ============================================ */
-.glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border: 1px solid rgba(255, 255, 255, 0.3); }
-[data-theme="dark"] .glass { background: rgba(20, 30, 22, 0.75); border: 1px solid rgba(255, 255, 255, 0.08); }
-.mesh-gradient-hero {
-  background:
-    radial-gradient(ellipse at 15% 85%, hsla(140, 35%, 38%, 0.2) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 15%, hsla(140, 25%, 60%, 0.18) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, hsla(42, 30%, 95%, 0.5) 0%, transparent 60%),
-    var(--bg-cream);
-  background-size: 200% 200%;
-  animation: meshShift 20s ease infinite;
-}
+.glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border: 1px solid rgba(255,255,255,0.3); }
+[data-theme="dark"] .glass { background: rgba(20,30,22,0.75); border: 1px solid rgba(255,255,255,0.08); }
+.glass-subtle { background: rgba(255,255,255,0.5); backdrop-filter: blur(12px) saturate(150%); -webkit-backdrop-filter: blur(12px) saturate(150%); }
+.liquid-glass { background: linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0.05)); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius-2xl); box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 20px 60px rgba(0,0,0,0.08); }
+.mesh-gradient { background: radial-gradient(at 20% 80%,hsla(140,40%,45%,0.25) 0%,transparent 50%), radial-gradient(at 80% 20%,hsla(140,30%,65%,0.2) 0%,transparent 50%), radial-gradient(at 50% 50%,hsla(42,30%,93%,0.4) 0%,transparent 50%), var(--surface); }
+.mesh-gradient-hero { background: radial-gradient(ellipse at 15% 85%,hsla(140,35%,38%,0.2) 0%,transparent 55%), radial-gradient(ellipse at 85% 15%,hsla(140,25%,60%,0.18) 0%,transparent 50%), radial-gradient(ellipse at 50% 50%,hsla(42,30%,95%,0.5) 0%,transparent 60%), var(--bg-cream); background-size: 200% 200%; animation: meshShift 20s ease infinite; }
 .mesh-gradient-hero::before { content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0; }
-@keyframes meshShift { 0%, 100% { background-position: 0% 50%; } 25% { background-position: 50% 25%; } 50% { background-position: 100% 50%; } 75% { background-position: 50% 75%; } }
 
-/* ============================================
-   7. ANIMATIONS & MICRO-INTERACTIONS
-   ============================================ */
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes fadeInDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes fadeInLeft { from { opacity: 0; transform: translateX(-24px); } to { opacity: 1; transform: translateX(0); } }
-@keyframes fadeInRight { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: translateX(0); } }
-@keyframes scaleIn { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: scale(1); } }
-@keyframes slideInRight { from { transform: translateX(100%); } to { transform: translateX(0); } }
-@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
-@keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
-@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-@keyframes breathe { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-12px) scale(1.02); } }
-@keyframes pulsingDots { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
-@keyframes heroWordReveal { from { opacity: 0; transform: translateY(30px) rotateX(-10deg); filter: blur(4px); } to { opacity: 1; transform: translateY(0) rotateX(0); filter: blur(0); } }
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
-.reveal.animate-in { opacity: 1; transform: translateY(0); }
-.reveal-left { opacity: 0; transform: translateX(-24px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
-.reveal-left.animate-in { opacity: 1; transform: translateX(0); }
-.reveal-right { opacity: 0; transform: translateX(24px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
-.reveal-right.animate-in { opacity: 1; transform: translateX(0); }
+@keyframes meshShift { 0%,100% { background-position: 0% 50%; } 25% { background-position: 50% 25%; } 50% { background-position: 100% 50%; } 75% { background-position: 50% 75%; } }
+@keyframes fadeInUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeInDown { from { opacity:0; transform:translateY(-16px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeInLeft { from { opacity:0; transform:translateX(-24px); } to { opacity:1; transform:translateX(0); } }
+@keyframes fadeInRight { from { opacity:0; transform:translateX(24px); } to { opacity:1; transform:translateX(0); } }
+@keyframes scaleIn { from { opacity:0; transform:scale(0.92); } to { opacity:1; transform:scale(1); } }
+@keyframes slideInRight { from { transform:translateX(100%); } to { transform:translateX(0); } }
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.6; } }
+@keyframes ticker { 0% { transform:translateX(0); } 100% { transform:translateX(-50%); } }
+@keyframes shimmer { 0% { background-position:-200% 0; } 100% { background-position:200% 0; } }
+@keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+@keyframes bounceIn { 0% { transform:scale(0.3); opacity:0; } 50% { transform:scale(1.05); } 70% { transform:scale(0.95); } 100% { transform:scale(1); opacity:1; } }
+@keyframes breathe { 0%,100% { transform:translateY(0) scale(1); } 50% { transform:translateY(-12px) scale(1.02); } }
+@keyframes heroWordReveal { from { opacity:0; transform:translateY(30px) rotateX(-10deg); filter:blur(4px); } to { opacity:1; transform:translateY(0) rotateX(0); filter:blur(0); } }
+
+.reveal { opacity:0; transform:translateY(24px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
+.reveal.animate-in { opacity:1; transform:translateY(0); }
+.reveal-left { opacity:0; transform:translateX(-24px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
+.reveal-left.animate-in { opacity:1; transform:translateX(0); }
+.reveal-right { opacity:0; transform:translateX(24px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
+.reveal-right.animate-in { opacity:1; transform:translateX(0); }
 .stagger-1 { transition-delay: 0.1s; }
 .stagger-2 { transition-delay: 0.2s; }
 .stagger-3 { transition-delay: 0.3s; }
@@ -277,27 +270,18 @@ ul, ol { list-style: none; }
 .stagger-5 { transition-delay: 0.5s; }
 .stagger-6 { transition-delay: 0.6s; }
 
-/* ============================================
-   8. REDUCED MOTION
-   ============================================ */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
-  .reveal, .reveal-left, .reveal-right { opacity: 1; transform: none; }
-  .mesh-gradient-hero { animation: none; }
+  *,*::before,*::after { animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+  .reveal,.reveal-left,.reveal-right { opacity:1; transform:none; }
+  .mesh-gradient-hero { animation:none; }
 }
 
-/* ============================================
-   9. RESPONSIVE BREAKPOINTS
-   ============================================ */
-@media (min-width: 480px) { .container { padding: 0 var(--space-6); } }
-@media (min-width: 768px) { :root { --navbar-height: 80px; } .container { padding: 0 var(--space-8); } .section { padding: var(--space-12) 0; } }
-@media (min-width: 1024px) { .container { padding: 0 var(--space-9); } }
-@media (min-width: 1280px) { .container { padding: 0 var(--space-10); } }
+@media (min-width:480px) { .container { padding: 0 var(--space-6); } }
+@media (min-width:768px) { :root { --navbar-height: 80px; } .container { padding: 0 var(--space-8); } .section { padding: var(--space-12) 0; } }
+@media (min-width:1024px) { .container { padding: 0 var(--space-9); } }
+@media (min-width:1280px) { .container { padding: 0 var(--space-10); } }
 
-/* ============================================
-   10. UTILITY CLASSES
-   ============================================ */
-.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.visually-hidden { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.truncate { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.line-clamp-2 { display:-webkit-box; -webkit-line-clamp:2; line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.line-clamp-3 { display:-webkit-box; -webkit-line-clamp:3; line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
