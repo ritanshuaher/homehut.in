@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /pages/account.html
+Disallow: /pages/cart.html
+Disallow: /pages/wishlist.html
+
+Sitemap: https://homehut.in/sitemap.xml

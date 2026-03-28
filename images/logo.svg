@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" fill="none" aria-label="HomeHut Logo">
+  <path d="M30 28 Q100 4 200 28" stroke="url(#arcGrad)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <text x="12" y="62" font-family="'DM Sans', -apple-system, sans-serif" font-size="38" font-weight="700" fill="#3A6B4A" letter-spacing="-1">Home</text>
+  <text x="130" y="62" font-family="'DM Sans', -apple-system, sans-serif" font-size="38" font-weight="600" fill="#7FA882" letter-spacing="-0.5">hut</text>
+  <defs>
+    <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3A6B4A"/>
+      <stop offset="100%" stop-color="#8FAF85"/>
+    </linearGradient>
+  </defs>
+</svg>
